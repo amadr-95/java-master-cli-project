@@ -3,7 +3,7 @@ package com.project.booking;
 import java.util.Arrays;
 
 public class BookingDAO {
-    private static final int CAPACITY = 1;
+    private static final int CAPACITY = 5;
     private static Booking[] bookings;
     private static int nextAvailableSlot;
 
@@ -46,5 +46,4 @@ public class BookingDAO {
     private Booking[] growBookings() {
         return Arrays.copyOf(bookings, bookings.length + 1);
     }
-
 }

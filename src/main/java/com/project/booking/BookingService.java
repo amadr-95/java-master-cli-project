@@ -13,6 +13,7 @@ public class BookingService {
     private final CarService carService;
     private final UserService userService;
 
+
     public BookingService() {
         this.bookingDAO = new BookingDAO();
         this.carService = new CarService();
@@ -30,20 +31,30 @@ public class BookingService {
             throw new IllegalArgumentException("Car does not exist");
         if (user == null)
             throw new IllegalArgumentException("User does not exist");
-        if (user.getCar() != null)
-            throw new IllegalArgumentException("User has already booked a car");
 
         car.setAvailable(false);
-        user.setCar(car);
+        user.setCarsBooked(car);
         return bookingDAO.saveBooking(new Booking(user, car));
     }
 
-    public Booking getCarBookedByUser(UUID uuidUser) {
+    public Booking[] getCarsBookedByUser(UUID uuidUser) {
+        User user = userService.findUserById(uuidUser);
+        if (user == null)
+            throw new IllegalArgumentException("User does not exist");
+        int count = 0;
         for (Booking booking : getAllBookings()) {
-            if (booking.getUser().getUuid().equals(uuidUser)) {
-                return booking;
-            }
+            if (booking.getUser().getUuid().equals(uuidUser))
+                count++;
         }
-        return null;
+        if (count == 0)
+            return new Booking[0];
+
+        Booking[] bookings = new Booking[count];
+        int index = 0;
+        for (Booking booking : getAllBookings()) {
+            if (booking.getUser().getUuid().equals(uuidUser))
+                bookings[index++] = booking;
+        }
+        return bookings;
     }
 }
