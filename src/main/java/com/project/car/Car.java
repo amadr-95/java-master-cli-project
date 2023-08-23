@@ -22,6 +22,10 @@ public class Car {
         return uuid;
     }
 
+    public BigDecimal getPricePerDay() {
+        return pricePerDay;
+    }
+
     public boolean isElectric() {
         return isElectric;
     }

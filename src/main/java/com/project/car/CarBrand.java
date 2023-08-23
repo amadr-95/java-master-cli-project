@@ -4,5 +4,8 @@ public enum CarBrand {
     TESLA,
     AUDI,
     MERCEDES,
+    BMW,
+    PORSCHE,
+    FORD,
+    TOYOTA,
 }
-

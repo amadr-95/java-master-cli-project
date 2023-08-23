@@ -17,9 +17,9 @@ public class CarService {
     public Car[] getAllAvailableCars() {
         int number = numberOfAvailableCars();
         if (number == 0)
-            return new Car[0]; //there are no available cars
+            return new Car[0];
         else if (number == getAllCars().length)
-            return getAllCars(); //All are available
+            return getAllCars();
 
         Car[] availableCars = new Car[number];
         int index = 0;
@@ -65,9 +65,15 @@ public class CarService {
         return electricCars;
     }
 
+    public void addNewCar(Car car) {
+        if (car.getPricePerDay().doubleValue() <= 0)
+            throw new IllegalArgumentException("Car price is not valid");
+        carDAO.saveCar(car);
+    }
+
     public Car findCarById(UUID uuid) {
         for (Car car : getAllCars()) {
-            if (car != null && car.getUuid().equals(uuid)) {
+            if (car.getUuid().equals(uuid)) {
                 return car;
             }
         }
