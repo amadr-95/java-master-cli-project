@@ -5,24 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e55038ed-f2f1-4594-aaec-eaf58f659397" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/booking/Booking.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/booking/BookingDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/booking/BookingService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/car/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/car/CarBrand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/car/CarDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/car/CarService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/user/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/user/UserDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/user/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/booking/BookingArrayDataAccessService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/car/CarArrayDataAccessService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/user/UserArrayDataAccessService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/booking/BookingDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/booking/BookingDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/booking/BookingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/booking/BookingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/car/CarDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/car/CarDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/car/CarService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/car/CarService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/user/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/user/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/user/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +27,7 @@
       <list>
         <option value="Enum" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -50,10 +44,10 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": -1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: -1
+}</component>
   <component name="ProjectId" id="2UOXBfrpyM1d6gEdsfi2JC4KkTe" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -65,7 +59,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "step2-interfaces",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "C:/Users/Amador/IdeaProjects/amigoscode",
     "settings.editor.selected.configurable": "MavenSettings"

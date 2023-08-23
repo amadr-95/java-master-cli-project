@@ -9,18 +9,18 @@ import java.util.UUID;
 
 public class BookingService {
 
-    private final BookingDAO bookingDAO;
+    private final BookingDAO bookingArrayDataAccessService;
     private final CarService carService;
     private final UserService userService;
 
     public BookingService() {
-        this.bookingDAO = new BookingDAO();
+        this.bookingArrayDataAccessService = new BookingArrayDataAccessService();
         this.carService = new CarService();
         this.userService = new UserService();
     }
 
     public Booking[] getAllBookings() {
-        return bookingDAO.getAllBookings();
+        return bookingArrayDataAccessService.getAllBookings();
     }
 
     public Booking bookACar(UUID uuidCar, UUID uuidUser) {
@@ -35,7 +35,7 @@ public class BookingService {
 
         car.setAvailable(false);
         user.setCar(car);
-        return bookingDAO.saveBooking(new Booking(user, car));
+        return bookingArrayDataAccessService.saveBooking(new Booking(user, car));
     }
 
     public Booking getCarBookedByUser(UUID uuidUser) {
