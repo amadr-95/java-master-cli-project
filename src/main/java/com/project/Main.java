@@ -3,10 +3,13 @@ package com.project;
 import com.project.booking.Booking;
 import com.project.booking.BookingService;
 import com.project.car.Car;
+import com.project.car.CarBrand;
 import com.project.car.CarService;
 import com.project.user.User;
 import com.project.user.UserService;
 
+import java.math.BigDecimal;
+import java.util.Arrays;
 import java.util.Scanner;
 import java.util.UUID;
 
@@ -24,17 +27,22 @@ public class Main {
                                         
                     BOOKING CLI SYSTEM ©
                     1️⃣ - Book Car
-                    2️⃣ - View All Users Booked Car
+                    2️⃣ - View Cars Booked By User
                     3️⃣ - View All Bookings
                     4️⃣ - View Available Cars
                     5️⃣ - View Available Electric Cars
-                    6️⃣ - View All Users
-                    7️⃣ - Exit
+                    6️⃣ - Add New Car
+                    7️⃣ - View All Users
+                    8️⃣ - Add New User
+                    9️⃣ - Exit
                     """);
             option = scInt.nextInt();
             UUID uuidCar;
             UUID uuidUser;
             Booking booking;
+            Booking[] bookings;
+            Car car;
+            User user;
             switch (option) {
                 case 1 -> {
                     if (carService.getAllAvailableCars().length != 0) {
@@ -51,23 +59,57 @@ public class Main {
                 case 2 -> {
                     viewUsers();
                     uuidUser = askUuidUser();
-                    booking = bookingService.getCarBookedByUser(uuidUser);
-                    if (booking != null)
-                        System.out.println("😀 " + booking.getUser() +
-                                " has this car booked:\n" + isElectricEmoji(booking.getCar()) +
-                                booking.getCar() + "\nReference: " + booking.getUuid());
-                    else
-                        System.out.println("User" + userService.findUserById(uuidUser) +
+                    bookings = bookingService.getCarsBookedByUser(uuidUser);
+                    if (bookings.length != 0) {
+                        System.out.println("😀 " + userService.findUserById(uuidUser) +
+                                " has these cars booked:");
+                        for (Booking b : bookings) {
+                            System.out.println(isElectricEmoji(b.getCar()) + b.getCar() +
+                                    "\nReference: " + b.getUuid());
+                        }
+                    } else
+                        System.out.println("User " + userService.findUserById(uuidUser) +
                                 " does not have any car booked yet 🙁");
                 }
                 case 3 -> viewAllBookings();
                 case 4 -> viewAvailableCars();
                 case 5 -> viewAvailableElectricCars();
-                case 6 -> viewUsers();
-                case 7 -> System.out.println("Bye! 👋");
+                case 6 -> {
+                    car = new Car(askBrand(), askPrice(), isElectric());
+                    carService.addNewCar(car);
+                    System.out.println(isElectricEmoji(car) + car + " succesfully added to database");
+                }
+                case 7 -> viewUsers();
+                case 8 -> {
+                    user = new User(askName());
+                    userService.addNewUser(user);
+                    System.out.println("😀 User " + user + " succesfully added to database");
+                }
+                case 9 -> System.out.println("Bye! 👋");
                 default -> System.out.println("Invalid option ❌");
             }
-        } while (option != 7);
+        } while (option != 9);
+    }
+
+    private static String askName() {
+        System.out.println("⏩ Name:");
+        return scText.nextLine();
+    }
+
+    private static boolean isElectric() {
+        System.out.println("🔅 Electric? (true/false):");
+        return scInt.nextBoolean();
+    }
+
+    private static BigDecimal askPrice() {
+        System.out.println("💲 Price per day:");
+        return scInt.nextBigDecimal();
+    }
+
+    private static CarBrand askBrand() {
+        System.out.println("⏩ Pick a brand:");
+        Arrays.stream(CarBrand.values()).forEach(System.out::println);
+        return CarBrand.valueOf(scText.nextLine());
     }
 
     private static UUID askUuidUser() {
