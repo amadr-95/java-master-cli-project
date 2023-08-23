@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e55038ed-f2f1-4594-aaec-eaf58f659397" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/booking/BookingArrayDataAccessService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/car/CarArrayDataAccessService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/user/UserArrayDataAccessService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/booking/BookingDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/booking/BookingDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/booking/BookingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/booking/BookingService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/car/CarDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/car/CarDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/car/CarService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/car/CarService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/user/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/user/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/user/UserService.java" afterDir="false" />
-    </list>
+    <list default="true" id="e55038ed-f2f1-4594-aaec-eaf58f659397" name="Changes" comment="changes to work with BookingDAO interface" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,17 +42,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "step2-interfaces",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/Amador/IdeaProjects/amigoscode",
-    "settings.editor.selected.configurable": "MavenSettings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;step2-interfaces&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Amador/IdeaProjects/amigoscode&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.project.Main" />
@@ -94,6 +82,75 @@
       <option name="presentableId" value="Default" />
       <updated>1692811468697</updated>
     </task>
+    <task id="LOCAL-00001" summary="created UserDAO interface">
+      <option name="closed" value="true" />
+      <created>1692816632949</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1692816632949</updated>
+    </task>
+    <task id="LOCAL-00002" summary="changes to work with userDAO interface">
+      <option name="closed" value="true" />
+      <created>1692816677013</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1692816677013</updated>
+    </task>
+    <task id="LOCAL-00003" summary="created CarDAO interface">
+      <option name="closed" value="true" />
+      <created>1692816692676</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1692816692676</updated>
+    </task>
+    <task id="LOCAL-00004" summary="changes to work with CarDAO interface">
+      <option name="closed" value="true" />
+      <created>1692816706521</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1692816706521</updated>
+    </task>
+    <task id="LOCAL-00005" summary="created BookingDAO interface">
+      <option name="closed" value="true" />
+      <created>1692816750099</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1692816750100</updated>
+    </task>
+    <task id="LOCAL-00006" summary="changes to work with BookingDAO interface">
+      <option name="closed" value="true" />
+      <created>1692816762792</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1692816762792</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="created UserDAO interface" />
+    <MESSAGE value="changes to work with UserDAO interface" />
+    <MESSAGE value="created CarDAO interface" />
+    <MESSAGE value="changes to work with CarDAO interface" />
+    <MESSAGE value="created BookingDAO interface" />
+    <MESSAGE value="changes to work with BookingDAO interface" />
+    <option name="LAST_COMMIT_MESSAGE" value="changes to work with BookingDAO interface" />
   </component>
 </project>
