@@ -4,14 +4,14 @@ import java.util.UUID;
 
 public class CarService {
 
-    private final CarDAO carDAO;
+    private final CarDAO carArrayDataAccessService;
 
     public CarService() {
-        this.carDAO = new CarDAO();
+        this.carArrayDataAccessService = new CarArrayDataAccessService();
     }
 
     public Car[] getAllCars() {
-        return carDAO.getAllCars();
+        return carArrayDataAccessService.getAllCars();
     }
 
     public Car[] getAllAvailableCars() {
