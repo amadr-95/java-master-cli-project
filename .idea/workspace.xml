@@ -4,20 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e55038ed-f2f1-4594-aaec-eaf58f659397" name="Changes" comment="updated gitignore">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/booking/Booking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/booking/Booking.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/booking/BookingDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/booking/BookingDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/booking/BookingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/booking/BookingService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/car/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/car/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/car/CarBrand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/car/CarBrand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/car/CarDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/car/CarDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/car/CarService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/car/CarService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/user/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/user/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/user/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/user/UserService.java" afterDir="false" />
-    </list>
+    <list default="true" id="e55038ed-f2f1-4594-aaec-eaf58f659397" name="Changes" comment="updated gitignore" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,6 +19,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="step1-initial-implementation" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -44,27 +36,27 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": -1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: -1
+}</component>
   <component name="ProjectId" id="2UOXBfrpyM1d6gEdsfi2JC4KkTe" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "step1-initial-implementation-advanced",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/Amador/IdeaProjects/amigoscode",
-    "settings.editor.selected.configurable": "MavenSettings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;step1-initial-implementation-advanced&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Amador/IdeaProjects/amigoscode&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.project.Main" />
@@ -81,6 +73,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
