@@ -6,10 +6,6 @@ public class CarService {
 
     private final CarDAO carArrayDataAccessService;
 
-    public CarService() {
-        this.carArrayDataAccessService = new CarArrayDataAccessService();
-    }
-
     public CarService(CarDAO carArrayDataAccessService) {
         this.carArrayDataAccessService = carArrayDataAccessService;
     }
