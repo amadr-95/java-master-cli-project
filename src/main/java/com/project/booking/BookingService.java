@@ -5,6 +5,9 @@ import com.project.car.CarService;
 import com.project.user.User;
 import com.project.user.UserService;
 
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.UUID;
 
 public class BookingService {
@@ -35,7 +38,22 @@ public class BookingService {
 
         car.setAvailable(false);
         user.setCar(car);
-        return bookingArrayDataAccessService.saveBooking(new Booking(user, car));
+        Booking booking = new Booking(user, car);
+        saveBookingToAFile(booking);
+        return bookingArrayDataAccessService.saveBooking(booking);
+    }
+
+    private void saveBookingToAFile(Booking booking) {
+        String PATH = "src/main/resources/bookings.txt";
+        try (PrintWriter writer = new PrintWriter(new FileWriter(PATH, true))) {
+            writer.println(booking.getUser());
+            writer.println(booking.getCar());
+            writer.println("Ref: " + booking.getUuid());
+            writer.println("Date: " + booking.getDate());
+            writer.println();
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
+        }
     }
 
     public Booking getCarBookedByUser(UUID uuidUser) {

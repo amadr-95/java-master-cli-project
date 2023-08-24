@@ -23,6 +23,10 @@ public class Booking {
         return uuid;
     }
 
+    public LocalDate getDate() {
+        return date;
+    }
+
     public User getUser() {
         return user;
     }

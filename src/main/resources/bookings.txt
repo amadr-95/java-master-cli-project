@@ -1,0 +1,11 @@
+BOOKINGS:
+User{uuid=1fda7774-b948-42fa-ad35-7eb1a7248e35, name='Samira'}
+Car{uuid=f93d0241-e7f7-447a-a090-0f63fb959dc0, brand='AUDI', pricePerDay=45, isElectric=false}
+Ref: 1dbef7ab-0499-437a-8716-b3ef8e3ae2f1
+Date: 2023-08-24
+
+User{uuid=0236e9db-8c46-45a1-8fef-718d12e271f3, name='Bond'}
+Car{uuid=6f866182-a2ef-44f7-9f72-6685d8e7d747, brand='TESLA', pricePerDay=69, isElectric=true}
+Ref: 6146dad1-8eef-42a8-8a9b-f8ea961721f8
+Date: 2023-08-24
+

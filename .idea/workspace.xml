@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e55038ed-f2f1-4594-aaec-eaf58f659397" name="Changes" comment="changes to work with BookingDAO interface" />
+    <list default="true" id="e55038ed-f2f1-4594-aaec-eaf58f659397" name="Changes" comment="added second constructor with UUID to parse users from the file">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/booking/Booking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/booking/Booking.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/booking/BookingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/booking/BookingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Bookings.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bookings.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,12 +19,17 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="step2-interfaces" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -32,10 +42,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;customColor&quot;: &quot;&quot;,
-  &quot;associatedIndex&quot;: -1
-}</component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 7
+}]]></component>
   <component name="ProjectId" id="2UOXBfrpyM1d6gEdsfi2JC4KkTe" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -47,7 +56,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;step2-interfaces&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;step2-interfaces-files&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/Amador/IdeaProjects/amigoscode&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;
@@ -130,7 +139,47 @@
       <option name="project" value="LOCAL" />
       <updated>1692816762792</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="updated readme">
+      <option name="closed" value="true" />
+      <created>1692816839623</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1692816839623</updated>
+    </task>
+    <task id="LOCAL-00008" summary="created files to read/write data from/to them">
+      <option name="closed" value="true" />
+      <created>1692817061605</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1692817061605</updated>
+    </task>
+    <task id="LOCAL-00009" summary="created class that implements UserDAO to read users from a file">
+      <option name="closed" value="true" />
+      <created>1692889988578</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1692889988578</updated>
+    </task>
+    <task id="LOCAL-00010" summary="changed property name">
+      <option name="closed" value="true" />
+      <created>1692890033777</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1692890033777</updated>
+    </task>
+    <task id="LOCAL-00011" summary="added second constructor with UUID to parse users from the file">
+      <option name="closed" value="true" />
+      <created>1692890126566</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1692890126566</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -151,6 +200,11 @@
     <MESSAGE value="changes to work with CarDAO interface" />
     <MESSAGE value="created BookingDAO interface" />
     <MESSAGE value="changes to work with BookingDAO interface" />
-    <option name="LAST_COMMIT_MESSAGE" value="changes to work with BookingDAO interface" />
+    <MESSAGE value="updated readme" />
+    <MESSAGE value="created files to read/write data from/to them" />
+    <MESSAGE value="created class that implements UserDAO to read users from a file" />
+    <MESSAGE value="changed property name" />
+    <MESSAGE value="added second constructor with UUID to parse users from the file" />
+    <option name="LAST_COMMIT_MESSAGE" value="added second constructor with UUID to parse users from the file" />
   </component>
 </project>
