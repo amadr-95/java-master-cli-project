@@ -59,11 +59,9 @@ public class BookingService {
     }
 
     public Booking getCarBookedByUser(UUID uuidUser) {
-        for (Booking booking : getAllBookings()) {
-            if (booking.getUser().getUuid().equals(uuidUser)) {
-                return booking;
-            }
-        }
-        return null;
+        return getAllBookings().stream()
+                .filter(booking -> booking.getUser().getUuid().equals(uuidUser))
+                .findFirst()
+                .orElse(null);
     }
 }
