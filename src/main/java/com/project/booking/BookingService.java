@@ -16,10 +16,10 @@ public class BookingService {
     private final CarService carService;
     private final UserService userService;
 
-    public BookingService() {
-        this.bookingArrayDataAccessService = new BookingArrayDataAccessService();
-        this.carService = new CarService();
-        this.userService = new UserService();
+    public BookingService(BookingDAO bookingArrayDataAccessService, CarService carService, UserService userService) {
+        this.bookingArrayDataAccessService = bookingArrayDataAccessService;
+        this.carService = carService;
+        this.userService = userService;
     }
 
     public Booking[] getAllBookings() {

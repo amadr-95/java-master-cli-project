@@ -1,19 +1,35 @@
 package com.project;
 
 import com.project.booking.Booking;
+import com.project.booking.BookingArrayDataAccessService;
+import com.project.booking.BookingDAO;
 import com.project.booking.BookingService;
 import com.project.car.Car;
+import com.project.car.CarArrayDataAccessService;
+import com.project.car.CarDAO;
 import com.project.car.CarService;
 import com.project.user.User;
+import com.project.user.UserDAO;
+import com.project.user.UserFileDataAccessService;
 import com.project.user.UserService;
 
 import java.util.Scanner;
 import java.util.UUID;
 
 public class Main {
-    private static final UserService userService = new UserService();
-    private static final CarService carService = new CarService();
-    private static final BookingService bookingService = new BookingService();
+    //Dependency
+    private static final UserDAO userDAO = new UserFileDataAccessService();
+    private static final CarDAO carDAO = new CarArrayDataAccessService();
+    private static final BookingDAO bookingDAO = new BookingArrayDataAccessService();
+
+    //Injection
+    private static final UserService userService = new UserService(userDAO);
+    private static final CarService carService = new CarService(carDAO);
+    private static final BookingService bookingService = new BookingService(
+            bookingDAO,
+            carService,
+            userService
+    );
     private static final Scanner scInt = new Scanner(System.in);
     private static final Scanner scText = new Scanner(System.in);
 

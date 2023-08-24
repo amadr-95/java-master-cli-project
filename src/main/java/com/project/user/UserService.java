@@ -6,8 +6,8 @@ public class UserService {
 
     private final UserDAO userFileDataAccessService;
 
-    public UserService() {
-        this.userFileDataAccessService = new UserFileDataAccessService();
+    public UserService(UserDAO userFileDataAccessService) {
+        this.userFileDataAccessService = userFileDataAccessService;
     }
 
     public User[] getAllUsers() {

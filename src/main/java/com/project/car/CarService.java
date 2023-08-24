@@ -10,6 +10,10 @@ public class CarService {
         this.carArrayDataAccessService = new CarArrayDataAccessService();
     }
 
+    public CarService(CarDAO carArrayDataAccessService) {
+        this.carArrayDataAccessService = carArrayDataAccessService;
+    }
+
     public Car[] getAllCars() {
         return carArrayDataAccessService.getAllCars();
     }
