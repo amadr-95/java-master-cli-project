@@ -4,14 +4,14 @@ import java.util.UUID;
 
 public class UserService {
 
-    private final UserDAO userArrayDataAccessService;
+    private final UserDAO userFileDataAccessService;
 
     public UserService() {
-        this.userArrayDataAccessService = new UserArrayDataAccessService();
+        this.userFileDataAccessService = new UserFileDataAccessService();
     }
 
     public User[] getAllUsers() {
-        return userArrayDataAccessService.getAllUsers();
+        return userFileDataAccessService.getAllUsers();
     }
 
     public User findUserById(UUID uuid) {
