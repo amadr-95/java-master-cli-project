@@ -1,6 +1,5 @@
 package com.project.car;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
@@ -17,29 +16,21 @@ public class CarService {
     }
 
     public List<Car> getAllAvailableCars() {
-        List<Car> availableCars = new ArrayList<>();
-        for (Car car : getAllCars()) {
-            if (car.isAvailable())
-                availableCars.add(car);
-        }
-        return availableCars;
+        return getAllCars().stream()
+                .filter(Car::isAvailable)
+                .toList();
     }
 
     public List<Car> getAllElectricAvailableCars() {
-       List<Car> availableElectricCars = new ArrayList<>();
-        for (Car car : getAllAvailableCars()) {
-            if (car.isElectric())
-                availableElectricCars.add(car);
-        }
-        return availableElectricCars;
+       return getAllAvailableCars().stream()
+               .filter(Car::isElectric)
+               .toList();
     }
 
     public Car findCarById(UUID uuid) {
-        for (Car car : getAllCars()) {
-            if (car.getUuid().equals(uuid)) {
-                return car;
-            }
-        }
-        return null;
+        return getAllCars().stream()
+                .filter(car -> car.getUuid().equals(uuid))
+                .findFirst()
+                .orElse(null);
     }
 }
