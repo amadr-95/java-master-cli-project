@@ -1,7 +1,26 @@
 # CLI Car Booking Application
 
-## Switch from Array to Lists
+## Streams
 
-A lot of code has to be changed but it will simplify things.
-The biggest advantage by far is that the list grows dynamically, so you don't have to know
-the size previously. That is applied almost all classes that used array for retrieve data.
+We use streams where possible to retrieve data instead of using for loops.
+For example:
+
+**For each loop**
+```
+public List<Car> getAllAvailableCars() {
+List<Car> availableCars = new ArrayList<>();
+        for (Car car : getAllCars()) {
+            if (car.isAvailable())
+                availableCars.add(car);
+        }
+        return availableCars;
+}
+```
+**Streams**
+```
+public List<Car> getAllAvailableCars() {
+        return getAllCars().stream()
+                .filter(Car::isAvailable)
+                .toList();
+    }
+```
