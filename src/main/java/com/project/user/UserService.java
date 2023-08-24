@@ -1,5 +1,6 @@
 package com.project.user;
 
+import java.util.List;
 import java.util.UUID;
 
 public class UserService {
@@ -10,7 +11,7 @@ public class UserService {
         this.userFileDataAccessService = userFileDataAccessService;
     }
 
-    public User[] getAllUsers() {
+    public List<User> getAllUsers() {
         return userFileDataAccessService.getAllUsers();
     }
 

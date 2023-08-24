@@ -1,17 +1,19 @@
 package com.project.user;
 
+import java.util.List;
+
 public class UserArrayDataAccessService implements UserDAO {
-    private static final User[] users;
+    private static final List<User> users;
 
     static {
-        users = new User[]{
+        users = List.of(
                 new User("User1"),
-                new User("User2"),
-        };
+                new User("User2")
+        );
     }
 
     @Override
-    public User[] getAllUsers() {
+    public List<User> getAllUsers() {
         return users;
     }
 

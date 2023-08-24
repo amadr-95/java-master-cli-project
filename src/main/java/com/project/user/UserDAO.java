@@ -1,6 +1,8 @@
 package com.project.user;
 
+import java.util.List;
+
 public interface UserDAO {
 
-    User[] getAllUsers();
+    List<User> getAllUsers();
 }
