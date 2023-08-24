@@ -1,5 +1,7 @@
 package com.project.car;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.UUID;
 
 public class CarService {
@@ -10,64 +12,31 @@ public class CarService {
         this.carArrayDataAccessService = carArrayDataAccessService;
     }
 
-    public Car[] getAllCars() {
+    public List<Car> getAllCars() {
         return carArrayDataAccessService.getAllCars();
     }
 
-    public Car[] getAllAvailableCars() {
-        int number = numberOfAvailableCars();
-        if (number == 0)
-            return new Car[0]; //there are no available cars
-        else if (number == getAllCars().length)
-            return getAllCars(); //All are available
-
-        Car[] availableCars = new Car[number];
-        int index = 0;
+    public List<Car> getAllAvailableCars() {
+        List<Car> availableCars = new ArrayList<>();
         for (Car car : getAllCars()) {
-            if (car != null && car.isAvailable())
-                availableCars[index++] = car;
+            if (car.isAvailable())
+                availableCars.add(car);
         }
         return availableCars;
     }
 
-    private int numberOfAvailableCars() {
-        int count = 0;
-        for (Car car : getAllCars()) {
-            if (car != null && car.isAvailable())
-                count++;
+    public List<Car> getAllElectricAvailableCars() {
+       List<Car> availableElectricCars = new ArrayList<>();
+        for (Car car : getAllAvailableCars()) {
+            if (car.isElectric())
+                availableElectricCars.add(car);
         }
-        return count;
-    }
-
-    public Car[] getAllElectricAvailableCars() {
-        int electricCars = getNumberOfElectricAvailableCars();
-        if (electricCars == 0)
-            return new Car[0];
-        else if (electricCars == getAllCars().length) {
-            return getAllCars();
-        }
-
-        Car[] electricCarsArray = new Car[electricCars];
-        int index = 0;
-        for (Car car : getAllCars()) {
-            if (car != null && car.isAvailable() && car.isElectric())
-                electricCarsArray[index++] = car;
-        }
-        return electricCarsArray;
-    }
-
-    private int getNumberOfElectricAvailableCars() {
-        int electricCars = 0;
-        for (Car car : getAllCars()) {
-            if (car != null && car.isAvailable() && car.isElectric())
-                electricCars++;
-        }
-        return electricCars;
+        return availableElectricCars;
     }
 
     public Car findCarById(UUID uuid) {
         for (Car car : getAllCars()) {
-            if (car != null && car.getUuid().equals(uuid)) {
+            if (car.getUuid().equals(uuid)) {
                 return car;
             }
         }

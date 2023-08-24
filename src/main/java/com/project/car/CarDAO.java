@@ -1,6 +1,8 @@
 package com.project.car;
 
+import java.util.List;
+
 public interface CarDAO {
 
-    Car[] getAllCars();
+    List<Car> getAllCars();
 }
