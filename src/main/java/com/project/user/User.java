@@ -15,6 +15,12 @@ public class User {
         this.car = null;
     }
 
+    public User(UUID uuid, String name) {
+        this.uuid = uuid;
+        this.name = name;
+        this.car = null;
+    }
+
     public UUID getUuid() {
         return uuid;
     }
