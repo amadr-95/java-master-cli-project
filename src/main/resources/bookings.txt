@@ -14,3 +14,8 @@ Car{uuid=a8dad791-7fa5-46f4-92c6-cf9eee889b3c, brand='MERCEDES', pricePerDay=55,
 Ref: da786b24-d1f1-419a-9bbf-3de2cbde9d53
 Date: 2023-08-24
 
+User{uuid=1fda7774-b948-42fa-ad35-7eb1a7248e35, name='Samira'}
+Car{uuid=6f15b728-f63f-45e9-896d-9ce22fbf9a48, brand='AUDI', pricePerDay=45, isElectric=false}
+Ref: c6ef92bc-1b57-4b71-a605-6d5ea4f2a8d5
+Date: 2023-08-24
+

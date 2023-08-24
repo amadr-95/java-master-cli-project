@@ -1,8 +1,10 @@
 package com.project.booking;
 
+import java.util.List;
+
 public interface BookingDAO {
 
-    Booking[] getAllBookings();
+    List<Booking> getAllBookings();
 
-    Booking saveBooking(Booking booking);
+    void saveBooking(Booking booking);
 }

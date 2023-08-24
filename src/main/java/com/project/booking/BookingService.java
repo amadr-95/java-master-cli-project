@@ -8,6 +8,7 @@ import com.project.user.UserService;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.List;
 import java.util.UUID;
 
 public class BookingService {
@@ -22,7 +23,7 @@ public class BookingService {
         this.userService = userService;
     }
 
-    public Booking[] getAllBookings() {
+    public List<Booking> getAllBookings() {
         return bookingArrayDataAccessService.getAllBookings();
     }
 
@@ -40,7 +41,8 @@ public class BookingService {
         user.setCar(car);
         Booking booking = new Booking(user, car);
         saveBookingToAFile(booking);
-        return bookingArrayDataAccessService.saveBooking(booking);
+        bookingArrayDataAccessService.saveBooking(booking);
+        return booking;
     }
 
     private void saveBookingToAFile(Booking booking) {

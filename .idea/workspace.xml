@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e55038ed-f2f1-4594-aaec-eaf58f659397" name="Changes" comment="updated readme">
+    <list default="true" id="e55038ed-f2f1-4594-aaec-eaf58f659397" name="Changes" comment="changed the methods getAllAvailableCars() and getAllAvailableElectricCars() to return a list instead of an array">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/project/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/booking/BookingArrayDataAccessService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/booking/BookingArrayDataAccessService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/booking/BookingDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/booking/BookingDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/project/booking/BookingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/booking/BookingService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/car/CarService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/car/CarService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/user/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/bookings.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bookings.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +29,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="step2-interfaces-files" />
+        <entry key="$PROJECT_DIR$" value="step3-dependency-injection" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -57,7 +58,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;step3-dependency-injection&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;step4-lists&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/Amador/IdeaProjects/amigoscode&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;
@@ -200,7 +201,31 @@
       <option name="project" value="LOCAL" />
       <updated>1692890490004</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="updated readme">
+      <option name="closed" value="true" />
+      <created>1692891638671</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1692891638671</updated>
+    </task>
+    <task id="LOCAL-00015" summary="changed the method getAllUsers() to return an list instead of an array">
+      <option name="closed" value="true" />
+      <created>1692893386975</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1692893386975</updated>
+    </task>
+    <task id="LOCAL-00016" summary="changed the methods getAllAvailableCars() and getAllAvailableElectricCars() to return a list instead of an array">
+      <option name="closed" value="true" />
+      <created>1692893470420</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1692893470420</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -227,6 +252,8 @@
     <MESSAGE value="added second constructor with UUID to parse users from the file" />
     <MESSAGE value="feature: bookings data are saved in a file when they are made. Added method saveBookingToAFile()" />
     <MESSAGE value="updated readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated readme" />
+    <MESSAGE value="changed the method getAllUsers() to return a list instead of an array" />
+    <MESSAGE value="changed the methods getAllAvailableCars() and getAllAvailableElectricCars() to return a list instead of an array" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed the methods getAllAvailableCars() and getAllAvailableElectricCars() to return a list instead of an array" />
   </component>
 </project>
