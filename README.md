@@ -1,6 +1,6 @@
 # CLI Car Booking Application
 
-## Initial Implementation (advanced)
+## Initial Implementation (Advanced)
 
 As an admin for a car company I would like to have system to book cars and view users.
 
