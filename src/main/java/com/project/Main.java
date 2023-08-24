@@ -53,7 +53,7 @@ public class Main {
             Booking booking;
             switch (option) {
                 case 1 -> {
-                    if (carService.getAllAvailableCars().length != 0) {
+                    if (!carService.getAllAvailableCars().isEmpty()) {
                         viewAvailableCars();
                         uuidCar = askUuidCar();
                         viewUsers();
@@ -97,7 +97,7 @@ public class Main {
     }
 
     private static void viewAvailableElectricCars() {
-        if (carService.getAllElectricAvailableCars().length != 0) {
+        if (!carService.getAllElectricAvailableCars().isEmpty()) {
             for (Car car : carService.getAllElectricAvailableCars()) {
                 System.out.println("🔅 " + car);
             }
@@ -106,7 +106,7 @@ public class Main {
     }
 
     private static void viewAllBookings() {
-        if (bookingService.getAllBookings().length != 0) {
+        if (!bookingService.getAllBookings().isEmpty()) {
             for (Booking b : bookingService.getAllBookings()) {
                 System.out.println("🔑 Booking: " + b);
             }
@@ -115,7 +115,7 @@ public class Main {
     }
 
     private static void viewUsers() {
-        if (userService.getAllUsers().length != 0) {
+        if (!userService.getAllUsers().isEmpty()) {
             for (User user : userService.getAllUsers()) {
                 System.out.println("😀 " + user);
             }
@@ -124,7 +124,7 @@ public class Main {
     }
 
     private static void viewAvailableCars() {
-        if (carService.getAllAvailableCars().length != 0) {
+        if (!carService.getAllAvailableCars().isEmpty()) {
             for (Car car : carService.getAllAvailableCars()) {
                 String isElectric = isElectricEmoji(car);
                 System.out.println(isElectric + car);
