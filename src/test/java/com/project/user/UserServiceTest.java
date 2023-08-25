@@ -7,8 +7,8 @@ import java.util.List;
 import java.util.UUID;
 
 public class UserServiceTest {
-    UserService userServiceFile = new UserService(new UserFileDataAccessService());
-    UserService userServiceArray = new UserService(new UserArrayDataAccessService());
+    private final UserService userServiceFile = new UserService(new UserFileDataAccessService());
+    private final UserService userServiceArray = new UserService(new UserArrayDataAccessService());
 
     @Test
     public void shouldGetAllUsersFromFileUsers() {
