@@ -12,7 +12,7 @@ public class CarServiceTest {
 
     @BeforeEach
     void setupBeforeEach() {
-        carService.getAllCars().stream()
+        carService.getAllCars()
                 .forEach(car -> car.setAvailable(true));
     }
 
@@ -78,7 +78,7 @@ public class CarServiceTest {
                 CarBrand.TESLA
         );
         Assertions.assertNotEquals(brandList, expected);
-        Assertions.assertTrue(brandList.isEmpty());
         Assertions.assertFalse(brandList.contains(CarBrand.TESLA));
+        Assertions.assertTrue(brandList.isEmpty());
     }
 }
