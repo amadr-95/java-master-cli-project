@@ -2,6 +2,7 @@ package com.project.user;
 
 import com.project.car.Car;
 
+import java.util.Objects;
 import java.util.UUID;
 
 public class User {
@@ -21,6 +22,10 @@ public class User {
         this.car = null;
     }
 
+    public String getName() {
+        return name;
+    }
+
     public UUID getUuid() {
         return uuid;
     }
@@ -31,6 +36,19 @@ public class User {
 
     public void setCar(Car car) {
         this.car = car;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        User user = (User) o;
+        return Objects.equals(uuid, user.uuid) && Objects.equals(name, user.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(uuid, name);
     }
 
     @Override
