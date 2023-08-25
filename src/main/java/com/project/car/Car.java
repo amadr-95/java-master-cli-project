@@ -18,6 +18,10 @@ public class Car {
         this.isAvailable = true;
     }
 
+    public CarBrand getBrand() {
+        return brand;
+    }
+
     public UUID getUuid() {
         return uuid;
     }
