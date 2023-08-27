@@ -4,7 +4,9 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.math.BigDecimal;
 import java.util.List;
+import java.util.UUID;
 
 public class CarServiceTest {
 
@@ -80,5 +82,19 @@ public class CarServiceTest {
         Assertions.assertNotEquals(brandList, expected);
         Assertions.assertFalse(brandList.contains(CarBrand.TESLA));
         Assertions.assertTrue(brandList.isEmpty());
+    }
+
+    @Test
+    public void shouldFindCarById() {
+        List<Car> allCars = carService.getAllCars();
+        UUID uuid = allCars.get(0).getUuid();
+        Assertions.assertEquals(carService.findCarById(uuid), allCars.get(0));
+    }
+
+    @Test
+    public void shouldNotFindCarById() {
+        Car car = new Car(CarBrand.TESLA, new BigDecimal(80), true);
+        UUID uuid = car.getUuid();
+        Assertions.assertNull(carService.findCarById(car.getUuid()));
     }
 }
