@@ -31,3 +31,13 @@ Our application must display a menu like that:
 6️⃣ - View all users
 7️⃣ - Exit
 ```
+
+## Check out branches
+- `git checkout step1-initial-implementation`
+- `git checkout step1-initial-implementation-advanced`
+- `git checkout step2-interfaces`
+- `git checkout step2-interfaces-files`
+- `git checkout step3-dependency-injection`
+- `git checkout step4-lists`
+- `git checkout step5-streams`
+- `git checkout step6-test`
