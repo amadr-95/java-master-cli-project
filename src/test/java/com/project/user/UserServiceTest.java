@@ -42,9 +42,7 @@ public class UserServiceTest {
 
     @Test
     public void shouldNotFindUserById() {
-        UUID uuid = userServiceFile.getAllUsers().get(0).getUuid();
-        User user = new User(UUID.fromString("07f1091a-c626-44d5-b66c-5abc6a3dd616"),
-                "fakeUser");
-        Assertions.assertNotEquals(userServiceFile.findUserById(uuid), user);
+        User user = new User(UUID.fromString("07f1091a-c626-44d5-b66c-5abc6a3dd616"), "fakeUser");
+        Assertions.assertNull(userServiceFile.findUserById(user.getUuid()));
     }
 }
