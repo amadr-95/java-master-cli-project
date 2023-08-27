@@ -94,7 +94,6 @@ public class CarServiceTest {
     @Test
     public void shouldNotFindCarById() {
         Car car = new Car(CarBrand.TESLA, new BigDecimal(80), true);
-        UUID uuid = car.getUuid();
         Assertions.assertNull(carService.findCarById(car.getUuid()));
     }
 }
